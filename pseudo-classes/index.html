@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="f">
+		<div class="b1" tabindex="1"></div>
+		<div class="b2" tabindex="2"></div>
+	</div>
+
+	<script>
+		var f = new Boolean();
+		function ch()
+		{
+			if(f == false) {
+				document.querySelector('.b1').style.top = '300px';
+				f = true;
+			} else {
+				document.querySelector('.b1').style.top = '0px';
+				f = false;
+			}
+		}
+		document.querySelector('.b2').onclick = ch;
+	</script>
+</body>
+</html>
