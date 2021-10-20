@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+body {
+	background: rgb(155, 110, 110);
+}
+.box {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 35px;
+	justify-content: space-around;
+
+	background: rgb(86, 99, 124);
+	padding: 15px;
+}
+.el {
+	width: 150px;
+	height: 250px;
+	background: #000;
+	transition:
+		background-color .85s linear;
+	box-shadow: rgb(62, 184, 46) 8px 6px 10px 0;
+	padding: 25px;
+}
+p {
+	color: #fff;
+	font-size: 25px;
+	font-family: serif;
+}
+.el:hover {
+	background: rgb(117, 92, 139);
+}
+.el:active {
+	background: rgb(196, 168, 93);
+}
