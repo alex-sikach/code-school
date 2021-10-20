@@ -21,7 +21,7 @@ body {
 	height: 250px;
 	background: #000;
 	transition:
-		background-color .85s linear;
+		background-color .2s linear;
 	box-shadow: rgb(62, 184, 46) 8px 6px 10px 0;
 	padding: 25px;
 }
