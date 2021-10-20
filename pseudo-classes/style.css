@@ -53,3 +53,11 @@ body {
 	height: 120px;
 	border-radius: 50%;
 }
+button.right {
+	position: relative;
+	width: 120px;
+	height: 50px;
+	border-radius: 25px;
+	border: none;
+	background: rgb(95, 64, 38);
+}

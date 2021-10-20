@@ -13,16 +13,56 @@
 		<div class="b2" tabindex="2"></div>
 	</div>
 
+	<script src="\anime-master\lib\anime.js"></script> <!--not work-->
 	<script>
-		var f = new Boolean();
+		var f = false;
+		function beReadyToClick() {
+			anime({
+				targets: '.b1',
+				autoplay: false,
+				translateX: 300
+			})
+		}
 		function ch()
 		{
-			if(f == false) {
-				document.querySelector('.b1').style.top = '300px';
-				f = true;
-			} else {
+			if(!f)
+			{
+					document.querySelector('.b1').style.top = '300px';
+					f = true;
+					var btn = document.createElement('button');
+					btn.className = 'right';
+					setTimeout(() => {
+						if(f) {
+							document.querySelector('.f').appendChild(btn);
+							document.querySelector('.right').onclick = beReadyToClick;
+						}
+					}, 1900);
+					
+			}
+			else
+			{
 				document.querySelector('.b1').style.top = '0px';
 				f = false;
+				let el = document.querySelector('.right');
+				if(el) {
+					//if it already appended
+					document.querySelector('.right').remove();
+				} else {
+					let counter = 0;
+					//waiting till it is append
+					let inter = setInterval(() => {
+						counter++;
+						const el = document.querySelector('.right');
+						console.log('setInterval is working');
+						if(el) {
+							el.remove();
+							clearInterval(inter);
+						} else if(counter >= 19) {
+							clearInterval(inter);
+						}
+					}, 100);
+					//and then - remove element
+				}
 			}
 		}
 		document.querySelector('.b2').onclick = ch;
