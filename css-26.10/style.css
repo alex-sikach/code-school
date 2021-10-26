@@ -1,0 +1,54 @@
+* {
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+.box {
+	top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	gap: 50px;
+	padding: 50px;
+	max-width: 400px;
+	background: rgb(100, 55, 204);
+	flex-wrap: wrap;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.square,
+.longsquare,
+.circle
+{
+	width: 150px;
+	height: 150px;
+	background: rgb(124, 65, 65);
+}
+.circle {
+	border-radius: 50%;
+	background: #e2da6b;
+}
+div > .circle > .circle {
+	background: rgb(107, 201, 71);
+	width: 25px;
+	height: 25px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+div > .longsquare > .circle {
+	width: 75px;
+	height: 75px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+div > .longsquare > .circle > .circle {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.longsquare {
+	width: 400px;
+	display: flex;
+	justify-content: space-around;
+}
