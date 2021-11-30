@@ -1,0 +1,32 @@
+* {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+body {
+	max-width: 100%;
+	background: #1a1a1a;
+	display: flex;
+	justify-content: center;
+}
+.box {
+	display: flex;
+	justify-content: center;
+	position: ;
+}
+.text {
+	top: 300px;
+	color: #fff;
+	width: max-content;
+	background: #1a1a1a;
+	font-size: 3em;
+}
+.text::before {
+	content: '';
+	background: #fff;
+	position: absolute;
+	left: -50%;
+	top: 50%;
+	width: 200%;
+	height: 4px;
+}
