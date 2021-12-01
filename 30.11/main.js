@@ -10,8 +10,7 @@ const blue_state = new State({backgroundColor:'#617ace',border:'15px solid #fff'
 const red_state = new State({backgroundColor:'#f76f6f',border:'5px solid #000',borderRadius:'40%'});
 const none_state = new State({backgroundColor:'#fff',border:'none',borderRadius:'50%'});
 const states = [green_state, blue_state, red_state];
-const NONE_STATE = 'none_-_state';
-let state = NONE_STATE;
+let state = none_state;
 function stop() {
 	setProperties(document.querySelector('.el').style, none_state);
 }
@@ -41,7 +40,7 @@ function interFunc() {
 }
 document.querySelector('.el').onclick = () => {
 	if (states.includes(state)) {
-		state = NONE_STATE;
+		state = none_state;
 		stop();
 		clearInterval(inter);
 	} else {
