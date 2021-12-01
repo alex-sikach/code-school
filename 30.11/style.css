@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=M+PLUS+1+Code:wght@100&display=swap');
+
+* {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #313131;
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.el {
+	transition: all .7s linear;
+	top: calc(50vh - 7.5em);
+	width: 15em;
+	height: 15em;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+}
+.el>p {
+	width: max-content;
+	font-size: 1.2em;
+	font-family: 'M PLUS 1 Code', sans-serif;
+	font-weight: 900;
+	pointer-events: none;
+}
