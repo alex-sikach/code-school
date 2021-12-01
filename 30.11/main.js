@@ -6,7 +6,7 @@ class State {
 	}
 }
 const green_state = new State({backgroundColor:'#6ace61',border:'10px solid #1a1a1a',borderRadius:'20%'});
-const blue_state = new State({ backgroundColor:'#617ace',border:'15px solid #fff',borderRadius:'30%'});
+const blue_state = new State({backgroundColor:'#617ace',border:'15px solid #fff',borderRadius:'30%'});
 const red_state = new State({backgroundColor:'#f76f6f',border:'5px solid #000',borderRadius:'40%'});
 const none_state = new State({backgroundColor:'#fff',border:'none',borderRadius:'50%'});
 const states = [green_state, blue_state, red_state];
