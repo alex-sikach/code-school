@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+	background: hsl(0, 0%, 30%);
+}
+.el {
+	position: relative;
+	left: 50%;
+	top: 50vh;
+	width: 7em;
+	min-height: 7em;
+	background: hsl(103, 100%, 64%);
+	animation:
+		stretch-w 2s linear,
+		stretch-h 1s 2s linear;
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+}
+@keyframes stretch-w {
+	0% {  }
+	100% { width: 40em; }
+}
+@keyframes stretch-h {
+	0% {  }
+
+	100% { min-height: 19em; }
+}
