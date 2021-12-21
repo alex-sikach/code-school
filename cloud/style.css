@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: hsl(0, 0%, 18%);
+}
+.cloud {
+	min-width: 340px;
+	min-height: 250px;
+	position: relative;
+	margin-top: -80px;
+	animation:
+		fly-up 2.1s .9s infinite linear
+		fly-down .9s 2.1s infinite linear
+	;
+}
+.left {
+	top: 110px;
+	left: 85px;
+	float: left;
+	background: hsl(0, 0%, 100%);
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+.right {
+	float: right;
+	right: 100px;
+	top: 130px;
+	background: hsl(0, 0%, 100%);
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+}
+.down {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background: hsl(0, 0%, 100%);
+	border-radius: 100px;
+	width: 280px;
+	height: 75px;
+}
+.shadow {
+	height: 80px;
+	width: 280px;
+	transform: rotateX(75deg);
+	left: 0;
+	bottom: -100px;
+	border-radius: 50px;
+	background: rgb(31, 31, 31);
+	animation: shadow 3s infinite linear;
+}
+@keyframes fly-up {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-100px);
+	}
+}
+@keyframes fly-down {
+	from {
+		transform: translateY(-100px);
+	}
+	to {
+		transform: translateY(0px);
+	}
+}
+@keyframes shadow {
+	from {
+		height: 80px;
+		width: 280px;
+	}
+	50% {
+		height: 120px;
+		width: 330px;
+	}
+	to {
+		height: 80px;
+		width: 280px;
+	}
+}
