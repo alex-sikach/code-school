@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>beach</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="cloud c1">
+		<div class="left"></div>
+		<div class="right"></div>
+		<div class="down"></div>
+	</div>
+	<div class="cloud c2">
+		<div class="left"></div>
+		<div class="right"></div>
+		<div class="down"></div>
+	</div>
+	<div class="cloud c3">
+		<div class="left"></div>
+		<div class="right"></div>
+		<div class="down"></div>
+	</div>
+
+	<script type="text/javascript">
+		class Cloud {
+			constructor(elem_class='cloud', personal_class='') {
+				this.class = elem_class;
+				this.personal_class = personal_class;
+			}
+			put(obj=this) {
+				let el = document.createElement('div');
+				el.classList.add(obj.class);
+				el.classList.add(obj.personal_class);
+			}
+		}
+	</script>
+</body>
+</html>

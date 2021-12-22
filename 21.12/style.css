@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: row;
+	align-items: start;
+	background: no-repeat linear-gradient(to top, rgb(241, 240, 145) 0% 20%, rgb(26, 44, 124) 20% 55%, rgb(89, 148, 167) 65% 100%);
+	background-size: 100%;
+
+}
+.cloud {
+	min-width: 340px;
+	min-height: 250px;
+	position: relative;
+}
+.c1 {
+	margin-top: 90px;
+	left: 100px;
+	transform:
+		scale(1, 1);
+}
+.c2 {
+	margin-top: -50px;
+	left: 250px;
+	transform:
+		scale(.70, .70);
+}
+.c3 {
+	margin-top: 65px;
+	left: 400px;
+	transform:
+		scale(.86, .86);
+}
+.left {
+	top: 110px;
+	left: 85px;
+	float: left;
+	background: hsl(0, 0%, 100%);
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+.right {
+	float: right;
+	right: 100px;
+	top: 130px;
+	background: hsl(0, 0%, 100%);
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+}
+.down {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background: hsl(0, 0%, 100%);
+	border-radius: 100px;
+	width: 280px;
+	height: 75px;
+}
